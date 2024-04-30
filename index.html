@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" name="foo" onclick="toggle(this)">
+    <input type="checkbox" name="foo">
+    <input type="checkbox" name="foo">
+    <input type="checkbox" name="foo">
+    <input type="checkbox" name="foo">
+    <input type="checkbox" name="foo">
+    <input type="checkbox" name="foo">
+    <input type="checkbox" name="foo">
+    <input type="checkbox" name="foo">
+    <input type="checkbox" name="foo">
+    <input type="checkbox" name="foo">
+    <input type="checkbox" name="foo">
+    <input type="checkbox" name="foo">
+    <input type="checkbox" name="foo">
+    <input type="checkbox" name="foo">
+    <input type="checkbox" name="foo">
+</body>
+<script>
+function toggle(source) {
+    checkboxes = document.getElementsByName('foo');
+    for(var i=0, n=checkboxes.length;i<n;i++) {
+        checkboxes[i].checked = source.checked;
+    }
+}
+</script>
+</html>
